@@ -15,17 +15,18 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/">user</Link>
+                                <Link className="nav-link active" aria-current="page" to="/">User</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">orders</Link>
+                                <Link className="nav-link" to="/">Orders</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">logout</Link>
+                                <Link className="nav-link" to="/">Logout</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/cart"><FaCartPlus/>{cartItems.length}</Link>
+                                <Link className="nav-link" to="/Cart"><FaCartPlus/><h7>{cartItems.length}</h7></Link>
                             </li>
+                           
                         
                         </ul>
                     </div>
