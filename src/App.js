@@ -2,6 +2,7 @@
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css'
 import './stylesheets/Layout.css';
+import OrdersPage from './pages/OrdersPage';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
@@ -18,13 +19,13 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' exact element={<ProtectedRoutes><HomePage/></ProtectedRoutes>} />
+          <Route path='/' exact element={<ProtectedRoutes><HomePage /></ProtectedRoutes>} />
           <Route path='/login' exact element={<LoginPage />} />
           <Route path='/register' exact element={<RegisterPage />} />
-          <Route path='/productinfo/:productid' exact element={<ProtectedRoutes><ProductInfo/></ProtectedRoutes>}/>
-          <Route path='/cart' exact element={<ProtectedRoutes><CartPage></CartPage></ProtectedRoutes>}/>
-
-
+          <Route path='/productinfo/:productid' exact element={<ProtectedRoutes><ProductInfo /></ProtectedRoutes>} />
+          <Route path='/cart' exact element={<ProtectedRoutes><CartPage /></ProtectedRoutes>} />
+          <Route path='/orders' exact element={<ProtectedRoutes><OrdersPage /></ProtectedRoutes>} />
+           
         </Routes>
 
       </BrowserRouter>
@@ -35,12 +36,12 @@ function App() {
 
 export default App;
 
-export const ProtectedRoutes=({children})=>{
+export const ProtectedRoutes = ({ children }) => {
 
-  if(localStorage.getItem('currentUser')){
+  if (localStorage.getItem('currentUser')) {
     return children;
   }
-  else{
+  else {
     return <Navigate to='/login' />
   }
 }

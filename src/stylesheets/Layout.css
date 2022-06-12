@@ -62,3 +62,6 @@ a{
 .nav-link{
     margin-right: 8px;
 }
+input , select{
+    height: 35px !important;
+}
