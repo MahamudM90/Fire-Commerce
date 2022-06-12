@@ -58,7 +58,7 @@ function Homepage() {
               setSearchKey(e.target.value);
             }}
             className="form-control mx-2"
-            placeholder="search items"
+            placeholder="Search Items"
 
           />
           <select

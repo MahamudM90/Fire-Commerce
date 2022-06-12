@@ -3,6 +3,7 @@ import './App.css';
 import 'react-toastify/dist/ReactToastify.css'
 import './stylesheets/Layout.css';
 import OrdersPage from './pages/OrdersPage';
+import AdminPage from './pages/AdminPage';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
@@ -25,6 +26,8 @@ function App() {
           <Route path='/productinfo/:productid' exact element={<ProtectedRoutes><ProductInfo /></ProtectedRoutes>} />
           <Route path='/cart' exact element={<ProtectedRoutes><CartPage /></ProtectedRoutes>} />
           <Route path='/orders' exact element={<ProtectedRoutes><OrdersPage /></ProtectedRoutes>} />
+          <Route path='/admin' exact element={<ProtectedRoutes><AdminPage/></ProtectedRoutes>} />
+
            
         </Routes>
 
