@@ -265,7 +265,7 @@ function AdminPage() {
             );
           })}
         </Tab>
-        <Tab eventKey="contact" title="Users" disabled></Tab>
+        <Tab eventKey="contact" title="Contact" disabled></Tab>
       </Tabs>
     </Layout>
   );

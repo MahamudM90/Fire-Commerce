@@ -5,10 +5,8 @@
     right: 0;
     z-index: 2;
 }
-
 .navbar{
     background-color: #003F5C !important;
-     
 }
 .navbar-brand{
     color: white !important;
@@ -17,7 +15,8 @@
 .nav-link{
     color: #fff !important;
 }
-.content {
+
+.content{
     padding-top: 80px;
 }
 
@@ -29,28 +28,26 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
-
+    right: 0
 }
 
 button{
     background-color: #003F5C;
     box-shadow: none;
     border: 1px solid rgba(255, 255, 255, 0.692);
-    color:#fff;
+    color: #fff;
     padding: 5px;
 }
 
 button:hover{
-    background-color: tomato
+    background-color:tomato;
 }
 .loader{
-    position:absolute;
-    top:50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50% , -50%);
     z-index: 99999;
-
 }
 .spinner-border{
     height: 100px;
@@ -59,17 +56,15 @@ button:hover{
 a{
     text-decoration: none;
 }
-.nav-link{
-    margin-right: 8px;
-}
 input , select{
     height: 35px !important;
 }
 #uncontrolled-tab-example-tab-products{
     color: black !important;
-
 }
-
 .nav-item button{
-    color: black !important;
+  color: black !important;
+}
+.nav-tabs{
+    background-color: cadetblue;
 }

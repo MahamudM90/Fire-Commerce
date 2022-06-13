@@ -19,6 +19,9 @@ function RegisterPage() {
       console.log(result);
       setLoading(false)
       toast.success('Registration Successfull');
+      setEmail('')
+      setPassword('')
+      setConfirmPassword('')
     } catch (error) {
       console.log(error);
       toast.error('Registration Failed');
